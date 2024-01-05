@@ -13,7 +13,7 @@ pipeline {
         stage('Use Shared Library Function') {
             steps {
                 script {
-                    customLibrary('World')
+                    customLibrary.sayHello('World')
                 }
             }
         }
