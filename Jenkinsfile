@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Use Shared Library Step') {
             steps {
-                myCustomStep.call('World')
+                myCustomStep('World')
             }
         }
 
