@@ -1,5 +1,5 @@
 package com.example
 
-def sayHello() {
-    echo "Hello from the shared library!"
+def sayHello(String word) {
+    echo "Hello from the shared library!: ${word}"
 }
