@@ -6,14 +6,14 @@ pipeline {
     stages {
         stage('Use Shared Library Step') {
             steps {
-                myCustomStep('World')
+                call('World')
             }
         }
 
         stage('Use Shared Library Function') {
             steps {
                 script {
-                    customLibrary.sayHello('World')
+                    sayHello('World')
                 }
             }
         }
