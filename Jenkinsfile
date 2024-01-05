@@ -13,7 +13,7 @@ pipeline {
         stage('Use Shared Library Function') {
             steps {
                 script {
-                    src.com.example.sayHello()
+                    com.example.sayHello()
                 }
             }
         }
